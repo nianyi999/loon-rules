@@ -1,0 +1,17 @@
+# NAME: XiaoHongShu International (RedNote)
+# AUTHOR: nianyi999, based on blackmatrix7 XiaoHongShu.list plus international CDN domains
+# UPDATED: 2026-10-24
+# DOMAIN-SUFFIX: 9
+# TOTAL: 9
+# NOTE: Loon remote-rule format. Policy is set in Loon's Remote Rule entry, not in this file.
+# Original 4 (blackmatrix7):
+DOMAIN-SUFFIX,fengkongcloud.com
+DOMAIN-SUFFIX,xhscdn.com
+DOMAIN-SUFFIX,xhscdn.net
+DOMAIN-SUFFIX,xiaohongshu.com
+# International / RedNote additions:
+DOMAIN-SUFFIX,rednotecdn.com
+DOMAIN-SUFFIX,rnote.com
+DOMAIN-SUFFIX,rednote.com
+DOMAIN-SUFFIX,xhslink.com
+DOMAIN-SUFFIX,xhs.cn
