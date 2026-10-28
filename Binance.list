@@ -1,0 +1,59 @@
+# NAME: Binance
+# AUTHOR: nianyi999, based on blackmatrix7 Binance.list plus MetaCubeX geosite binance
+# UPDATED: 2026-10-28
+# DOMAIN-SUFFIX: 47
+# TOTAL: 47
+# NOTE: Loon remote-rule format. Policy is set in Loon's Remote Rule entry, not in this file.
+# NOTE: binance.us excluded - it is the separate US platform, not global Binance app traffic.
+# Original 12 (blackmatrix7):
+DOMAIN-SUFFIX,appsflayer.com
+DOMAIN-SUFFIX,binance.cloud
+DOMAIN-SUFFIX,binance.com
+DOMAIN-SUFFIX,binance.me
+DOMAIN-SUFFIX,binancecnt.com
+DOMAIN-SUFFIX,binancefuture.com
+DOMAIN-SUFFIX,bnappzh.co
+DOMAIN-SUFFIX,bnbstatic.com
+DOMAIN-SUFFIX,bnbzh.ac
+DOMAIN-SUFFIX,bntrace.com
+DOMAIN-SUFFIX,saasexch.cc
+DOMAIN-SUFFIX,saasexch.com
+# Main / API / vision additions:
+DOMAIN-SUFFIX,binance.vision
+DOMAIN-SUFFIX,binance.info
+DOMAIN-SUFFIX,binance.org
+DOMAIN-SUFFIX,binance.net
+DOMAIN-SUFFIX,binance.co
+DOMAIN-SUFFIX,binance.cc
+DOMAIN-SUFFIX,binance.charity
+DOMAIN-SUFFIX,binanceapi.com
+DOMAIN-SUFFIX,binanceru.net
+# App / CDN / chain additions:
+DOMAIN-SUFFIX,bsappapi.com
+DOMAIN-SUFFIX,bsappapi.cc
+DOMAIN-SUFFIX,bscdnweb.com
+DOMAIN-SUFFIX,bnbchain.org
+DOMAIN-SUFFIX,nftstatic.com
+DOMAIN-SUFFIX,bnappweb.black
+DOMAIN-SUFFIX,bmwweb.solutions
+DOMAIN-SUFFIX,appsflyersdk.com
+# saasexch variants:
+DOMAIN-SUFFIX,saasexch.co
+DOMAIN-SUFFIX,saasexch.info
+DOMAIN-SUFFIX,saasexch.io
+# binancezh backup domains:
+DOMAIN-SUFFIX,binancezh.be
+DOMAIN-SUFFIX,binancezh.biz
+DOMAIN-SUFFIX,binancezh.cc
+DOMAIN-SUFFIX,binancezh.co
+DOMAIN-SUFFIX,binancezh.com
+DOMAIN-SUFFIX,binancezh.info
+DOMAIN-SUFFIX,binancezh.ink
+DOMAIN-SUFFIX,binancezh.kim
+DOMAIN-SUFFIX,binancezh.link
+DOMAIN-SUFFIX,binancezh.live
+DOMAIN-SUFFIX,binancezh.mobi
+DOMAIN-SUFFIX,binancezh.net
+DOMAIN-SUFFIX,binancezh.pro
+DOMAIN-SUFFIX,binancezh.sh
+DOMAIN-SUFFIX,binancezh.top
