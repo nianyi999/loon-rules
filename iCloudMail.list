@@ -1,0 +1,13 @@
+# NAME: iCloudMail
+# AUTHOR: nianyi999, based on Loon log triage 2026-10-30
+# UPDATED: 2026-10-30
+# DOMAIN-SUFFIX: 2
+# TOTAL: 2
+# NOTE: Loon remote-rule format. Policy is set in Loon's Remote Rule entry, not in this file.
+# NOTE: User choice 2026-10-30: expanded scope (both entries below), policy is a manual node group the user switches themselves (same bypass-IPRoyal treatment as Gmail/Spark), NOT DIRECT.
+# NOTE: Place this rule ABOVE FINAL and above any rule that would send mail traffic to the IPRoyal static chain, otherwise the IMAP connection stays on that chain.
+# NOTE: Proven by Loon log 2026-10-30: p211-imap.mail.icloud.com.cn:993 via FINAL / IPRoyal 住宅 (HTTP), TCP, 300.00s, 0B up / 0B down; enabling CN REGION DIRECT did NOT capture it (still FINAL on 14:15 and 14:18 entries, CN is GEOIP,cn-only, not domain-based), so a domain rule is required.
+# China iCloud Mail (GCBD, proven in log; covers pXXX-imap and pXXX-smtp hosts):
+DOMAIN-SUFFIX,mail.icloud.com.cn
+# Non-China iCloud Mail variant (same service, imap.mail.me.com / smtp.mail.me.com and pXXX-imap.mail.me.com hosts):
+DOMAIN-SUFFIX,mail.me.com
