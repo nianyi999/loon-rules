@@ -1,0 +1,24 @@
+# NAME: Spark
+# AUTHOR: nianyi999, based on blackmatrix7 Spark.list plus Loon log triage 2026-10-30
+# UPDATED: 2026-10-30
+# DOMAIN-SUFFIX: 8
+# DOMAIN: 2
+# TOTAL: 10
+# NOTE: Loon remote-rule format. Policy is set in Loon's Remote Rule entry, not in this file.
+# NOTE: Place this rule ABOVE the gmail.com -> static residential rule, otherwise imap.gmail.com will match gmail.com suffix first and stay on IPRoyal chain.
+# NOTE: Place this rule BELOW ad-blocking REJECT rules, so amplitude/appsflyer analytics stay REJECT.
+# NOTE: imap/smtp are DOMAIN (not suffix) on purpose - only those two Gmail subdomains go to the auto group, other gmail.com traffic stays on static residential.
+# Original 5 (blackmatrix7, UPDATED 2025-06-06):
+DOMAIN-SUFFIX,amplitude.com
+DOMAIN-SUFFIX,firebaseio.com
+DOMAIN-SUFFIX,hockeyapp.net
+DOMAIN-SUFFIX,readdle.com
+DOMAIN-SUFFIX,smartmailcloud.com
+# Spark site / app domains (certificate SAN + app):
+DOMAIN-SUFFIX,sparkmailapp.com
+DOMAIN-SUFFIX,sparkmail.app
+# Spark push (from Loon log: sdk.fra-01.braze.eu):
+DOMAIN-SUFFIX,braze.eu
+# Gmail IMAP/SMTP for Spark adding mailbox (from Loon log: imap.gmail.com:993 timed out via IPRoyal HTTP/SOCKS5 chain, 0B download):
+DOMAIN,imap.gmail.com
+DOMAIN,smtp.gmail.com
